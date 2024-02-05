@@ -13,14 +13,19 @@ struct ContentView: View {
         // Formulário --
         Form {
             
-            HStack {
-                Text("Automatic")
-            }
-            
-            HStack {
-                Text("Options")
-                Spacer()
-                Text("Light Until Sunset")
+            // Primeira Seção --
+            Section(header: Text("APPERANCE")){
+                HStack {
+                    Text("Automatic")
+                    Spacer()
+                    
+                }
+                
+                HStack {
+                    Text("Options")
+                    Spacer()
+                    Text("Light Until Sunset")
+                }
             }
         }
     }
