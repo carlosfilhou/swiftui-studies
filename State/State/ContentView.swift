@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var automaticButton = false
+    
     var body: some View {
         
         // Formulário --
