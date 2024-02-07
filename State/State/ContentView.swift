@@ -13,17 +13,14 @@ struct ContentView: View {
     
     var body: some View {
         
-        // Formulário --
         Form {
-            
-            // Primeira Seção --
             Section(header: Text("APPERANCE")){
                 HStack {
                     Text("Automatic")
                     Spacer()
-                    
+                    //Binding --
+                    Toggle("", isOn: $automaticButton)
                 }
-                
                 HStack {
                     Text("Options")
                     Spacer()
