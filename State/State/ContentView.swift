@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var automaticButton = false
+    @State var brightness = 65.0
     
     var body: some View {
         
@@ -18,6 +19,7 @@ struct ContentView: View {
                 HStack {
                     Text("Automatic")
                     Spacer()
+                    
                     //Binding --
                     Toggle("", isOn: $automaticButton)
                 }
@@ -25,6 +27,15 @@ struct ContentView: View {
                     Text("Options")
                     Spacer()
                     Text("Light Until Sunset")
+                }
+            }
+            Section {
+                HStack{
+                    Image(systemName: "sun.max.fill")
+                    Slider(value: $brightness, in: 0...100)
+                    Image(systemName: "sun.max.fill")
+                        .resizable()
+                        .frame(width: 25, height: 25)
                 }
             }
         }
