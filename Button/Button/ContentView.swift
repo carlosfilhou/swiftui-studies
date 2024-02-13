@@ -24,7 +24,7 @@ struct ContentView: View {
                 print("Botão Pressionado")
             },
                    label: {
-                Text("Seguir")
+                Label("Seguir", systemImage: "person.fill.badge.plus")
             })
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
