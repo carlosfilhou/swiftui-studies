@@ -12,7 +12,24 @@ struct ContentView: View {
         
         VStack {
             
-            //Botão ---
+            //Botão exemplo 1 ---
+            Button("Deletar", action: {
+                print("Botão Pressionado")
+            })
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            
+            //Botão exemplo 2 ---
+            Button(action: {
+                print("Botão Pressionado")
+            },
+                   label: {
+                Text("Seguir")
+            })
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            
+            //Botão exemplo 3 ---
             Button{} label: {
                 Label("Enviar", systemImage: "paperplane.fill")
             }
