@@ -11,6 +11,7 @@
 		DFC44E342B707A39004DF992 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC44E332B707A39004DF992 /* ContentView.swift */; };
 		DFC44E362B707A3A004DF992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC44E352B707A3A004DF992 /* Assets.xcassets */; };
 		DFC44E392B707A3A004DF992 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC44E382B707A3A004DF992 /* Preview Assets.xcassets */; };
+		DFC50C4E2B82AAFC008DC6F7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC50C4D2B82AAFB008DC6F7 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DFC44E332B707A39004DF992 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFC44E352B707A3A004DF992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC44E382B707A3A004DF992 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFC50C4D2B82AAFB008DC6F7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DFC44E312B707A39004DF992 /* StateApp.swift */,
 				DFC44E332B707A39004DF992 /* ContentView.swift */,
+				DFC50C4D2B82AAFB008DC6F7 /* SecondView.swift */,
 				DFC44E352B707A3A004DF992 /* Assets.xcassets */,
 				DFC44E372B707A3A004DF992 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC50C4E2B82AAFC008DC6F7 /* SecondView.swift in Sources */,
 				DFC44E342B707A39004DF992 /* ContentView.swift in Sources */,
 				DFC44E322B707A39004DF992 /* StateApp.swift in Sources */,
 			);
