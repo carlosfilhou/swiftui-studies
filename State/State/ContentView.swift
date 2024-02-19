@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct PlayerView: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .frame(width: 200, height: 100)
+                .foregroundColor(.blue)
+            PlayerButton()
+        }
+    }
+}
+
+struct PlayerButton: View {
     @State var isPlaying: Bool = false
     
     var body: some View {
-        
         Button {
             isPlaying.toggle()
         } label: {
@@ -20,6 +29,13 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 30, height: 30)
         }
+        .foregroundColor(.white)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        PlayerView()
     }
 }
 
