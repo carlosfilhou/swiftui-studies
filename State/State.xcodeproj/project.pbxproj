@@ -11,6 +11,7 @@
 		DF1426192B82D3B1004D23D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1426182B82D3B1004D23D1 /* ContentView.swift */; };
 		DF14261B2B82D3B2004D23D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF14261A2B82D3B2004D23D1 /* Assets.xcassets */; };
 		DF14261E2B82D3B2004D23D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF14261D2B82D3B2004D23D1 /* Preview Assets.xcassets */; };
+		DF1426252B82E512004D23D1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1426242B82E512004D23D1 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DF1426182B82D3B1004D23D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF14261A2B82D3B2004D23D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF14261D2B82D3B2004D23D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF1426242B82E512004D23D1 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				DF1426162B82D3B1004D23D1 /* StateApp.swift */,
+				DF1426242B82E512004D23D1 /* SecondView.swift */,
 				DF1426182B82D3B1004D23D1 /* ContentView.swift */,
 				DF14261A2B82D3B2004D23D1 /* Assets.xcassets */,
 				DF14261C2B82D3B2004D23D1 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1426252B82E512004D23D1 /* SecondView.swift in Sources */,
 				DF1426192B82D3B1004D23D1 /* ContentView.swift in Sources */,
 				DF1426172B82D3B1004D23D1 /* StateApp.swift in Sources */,
 			);
