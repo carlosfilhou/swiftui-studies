@@ -2,42 +2,23 @@
 //  ContentView.swift
 //  State
 //
-//  Created by Carlos dos Santos Filho on 05/02/2024.
+//  Created by Carlos dos Santos Filho on 19/02/2024.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @State var automaticButton = false
-    @State var brightness = 65.0
+    @State var isPlaying: Bool = false
     
     var body: some View {
         
-        Form {
-            Section(header: Text("APPERANCE")){
-                HStack {
-                    Text("Automatic")
-                    Spacer()
-                    
-                    //Binding --
-                    Toggle("", isOn: $automaticButton)
-                }
-                HStack {
-                    Text("Options")
-                    Spacer()
-                    Text("Light Until Sunset")
-                }
-            }
-            Section {
-                HStack{
-                    Image(systemName: "sun.max.fill")
-                    Slider(value: $brightness, in: 0...100)
-                    Image(systemName: "sun.max.fill")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                }
-            }
+        Button {
+            isPlaying.toggle()
+        } label: {
+            Image(systemName: isPlaying ? "pause" : "play")
+                .resizable()
+                .frame(width: 30, height: 30)
         }
     }
 }
@@ -45,4 +26,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
