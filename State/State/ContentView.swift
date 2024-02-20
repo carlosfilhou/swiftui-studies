@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct PlayerView: View {
+    @State private var isPlaying: Bool = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 14, style: .continuous)
                 .frame(width: 200, height: 100)
-                .foregroundColor(.blue)
-            PlayerButton()
+                .foregroundColor(isPlaying ? .blue : .red)
+            PlayerButton(isPlaying: $isPlaying)
         }
     }
 }
 
 struct PlayerButton: View {
-    @State var isPlaying: Bool = false
+    @Binding var isPlaying: Bool
     
     var body: some View {
         Button {
             isPlaying.toggle()
         } label: {
-            Image(systemName: isPlaying ? "pause" : "play")
+            Image(systemName: isPlaying ? "pause" : "play.fill")
                 .resizable()
                 .frame(width: 30, height: 30)
         }
